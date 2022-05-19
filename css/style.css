@@ -1,0 +1,175 @@
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: caviarbold;
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family: caviaritalic;
+    src: url(../fonts/CaviarDreams_Italic.ttf);
+}
+
+@font-face {
+    font-family: caviaritalicbold;
+    src: url(../fonts/CaviarDreams_BoldItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    font-family: caviarbold, Arial, sans-serif;
+
+    max-width: 1000px;
+    margin: auto;
+
+    text-align: center;
+    color: white;
+
+    padding: 10px;
+    border-bottom-right-radius: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 26px;
+}
+
+main{
+    font-family: caviar, Arial, sans-serif;
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    overflow: hidden;
+
+    background-image: url(../assets/program.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formContainer{
+    color: black;
+
+    max-width: 200px;
+    background-color: #ffffffbb;
+
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+.formContainer h2{
+    font-size: 18px;
+}
+
+input, select{
+    font-family: caviaritalic, arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+input[type=submit]{
+    font-family: caviaritalicbold, Arial, sans-serif;
+    background-color: rgb(109, 109, 109);
+}
+
+footer{
+    font-family: caviar, arial, sans-serif;
+    color: white;
+
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+
+    border-radius: 50px;
+}
+
+footer h3{
+    text-align: center;
+    padding: 10px;
+}
+
+footer .logo{
+    width: 80px;
+    display: inline-block;
+}
+
+footer a{
+    color: white;
+}
+
+footer ul{
+    display: inline-block;
+    list-style: none;
+    transform: translatey(-50%);
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        max-width: 300px;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    main{
+        max-width: 300px;
+        border-radius: 0;
+    }
+    
+    .formContainer{
+        float: none;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    footer{
+        max-width: 300px;
+        border-radius: 0;
+    }
+
+    footer .logo{
+        width: 40px;
+    }
+
+    footer h3{
+        font-size: 16px;
+    }
+
+    footer ul{
+        font-size: 10px;
+    }
+}
